@@ -12,10 +12,10 @@ let score,
 
 document.querySelector('#winning--score--btn').addEventListener('click', () =>
 {
-  let inputBox = document.querySelector('#winning--score');
-  if (inputBox.value > 0) {
+  let inputBox = document.querySelector('#winning--score').value;
+  if (inputBox) {
     maxValue = Number(inputBox.value)
-    inputBox.value = '';
+    inputBox = '';
   }
   document.querySelector('.pop-up').classList.add(`hidden`);
   document.querySelector(

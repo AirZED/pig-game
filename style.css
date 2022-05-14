@@ -212,3 +212,32 @@ span {
   border-radius: 50%;
   background-color: red;
 }
+
+
+.pop-up{
+  display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  background:rgba(10, 10, 10, 0.877);
+}
+
+.pop-up--message, .remove-pop-up{
+  position: relative;
+  background-color: #c7365f;
+  height: auto;
+  width: auto;
+  padding: 1rem;
+  font-size: 3rem;
+  border-radius: 17px;
+  margin: 2rem;
+}
+
+.pop-up.hidden{
+  display: flex;
+}
+

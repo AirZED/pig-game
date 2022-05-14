@@ -17,7 +17,17 @@ document.querySelector('#winning--score--btn').addEventListener('click', () =>
     maxValue = Number(inputBox.value)
     inputBox.value = '';
   }
+  document.querySelector('.pop-up').classList.add(`hidden`);
+  document.querySelector(
+    '.pop-up--message'
+  ).innerHTML = `YOUR HIGH SCORE IS: `+ maxValue;
+  
 })
+
+document.querySelector('.pop-up').addEventListener('click', () => {
+  document.querySelector('.pop-up').classList.remove(`hidden`);
+});
+
 //gamePlaying is the state updating variable.
 initializeGame();
 
